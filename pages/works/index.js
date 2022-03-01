@@ -1,9 +1,10 @@
 import { Box, Container, } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 const Works = () => {
   return(
-    <Box>
-        About
+    <Box css = {{fontSize: "100px", color: "white"}}>
+    	Work
     </Box>
   )
 }

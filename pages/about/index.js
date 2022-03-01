@@ -2,7 +2,7 @@ import { Box, Container } from "@chakra-ui/react";
 
 const About = () => {
   return(
-    <Box fontSize = "100px" textAlign = "center">
+    <Box css = {{ color: "white" }} fontSize = "100px" textAlign = "center">
         About
     </Box>
   )
