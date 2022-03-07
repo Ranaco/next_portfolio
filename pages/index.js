@@ -9,10 +9,11 @@ import { Stack,
 import Section from '../components/Section'
 import AnimatedText from '../components/animatedText'
 import NextLink from "next/link"
+import Bio from '../components/Bio'
 
 const Homepage = () => {
   return (
-    <Container maxW="100vw" height="100vh" bgColor="#202023">
+    <Container maxW="100vw" bgColor="#202023">
       <Box color="white" mb={5} p={4} height="30px">
         <Text
           mt="380px"
@@ -27,10 +28,11 @@ const Homepage = () => {
       <Stack
         mt={450}
         alignItems="center"
-        flexGrow={1}
+        maxW = "400px"
+        flexGrow={0}
         direction={{ base: 'column' }}
-        pr={44}
-        width="100vw"
+      
+        width="100%"
         maxW="80vw"
       >
         <Flex mr={200}>
@@ -71,9 +73,9 @@ const Homepage = () => {
           <Flex pl = "40px">
         <Text color = "white" fontSize = "25px" align = "start">
         <p>
-        Rana is a student and developer based in India and just loves to code. He started coding for fun but
-        soon, realised coding is a whole other thing. He loves to learn new technologies and solve real live problems
-        with code
+        Rana is a student and developer based in India and loves to code. He started coding for fun but
+        soon, realised coding is a whole another thing. He loves to learn new technologies and solve real life problems
+        with code.
         </p> 
         </Text>  
         </Flex>
@@ -83,10 +85,31 @@ const Homepage = () => {
                       Bio
                   </Text>
                 </Heading>
-            <Text>
-            </Text>
          </Flex>
-          </Stack>
+          <Bio>
+            <Flex align ="center" gap = { 10 }>
+              <Text fontWeight = "bold" fontSize = "30px">
+          2004
+          </Text>
+            <Text fontSize = { 20 }>
+                Born in Bihar, India
+            </Text>
+        </Flex>
+      <Flex width = "50vw" pt = { 5 } align = "start" gap = { 10 }>
+       <Box width = { 400 } pr = { 12 }>
+        <Text fontWeight= "bold" fontSize = "30px">
+            2021 - /
+        </Text></Box>
+        <Text fontSize = { 20 } pt = { 2 } textAlign = "start">
+              Finished Matriculation from <Link href = "https://stkarenshighschool.com" target = { "_" }>St. Karen's High School</Link> and opted for PCM( Physics/Chemistry/Maths ) for 
+              Intermediate with non-schooling. Started coding the same year(don't know the exact month but it should be May).
+              And stil going...
+        </Text>
+      </Flex>
+        
+    </Bio>
+  
+        </Stack>
         </Section>
       </Box>
     </Container>

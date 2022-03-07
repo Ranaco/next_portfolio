@@ -12,6 +12,7 @@ const Section = ({ children, props }) => {
     <StyledDiv
       initial="init"
       width = "50vw"
+       
       animate="final"
       variants={{
         init: {
@@ -24,9 +25,10 @@ const Section = ({ children, props }) => {
         }
       }}
       transition={{ duration: 0.5, delay: 0.3 }}
+        pb = { 126 }
     >
-      {children}
-    </StyledDiv>
+   {children}   
+  </StyledDiv>
   )
 }
 
