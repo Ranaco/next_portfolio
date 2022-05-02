@@ -3,8 +3,10 @@ import Layout from '../components/layouts/main'
 import { motion } from 'framer-motion'
 import theme from '../lib/theme'
 import Font from '../components/font'
+import { FC, ReactComponent } from 'react'
+import { AppProps } from 'next/app'
 
-const Website = ({ Component, pageProps, router }) => {
+const Website: FC<{ pageProps: AppProps, }> = ({ Component, pageProps, router }) => {
   return (
     <ChakraProvider theme={theme}>
       <Font />
